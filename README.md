@@ -13,7 +13,7 @@ Cada botón tiene un estilo y animación distinta: brillos, bordes dinámicos, o
 
 --- 
 
-## ✨ Pruevalo Online
+## ✨ Pruebalo Online
 
 [Botones_Neon](https://jcduro.bexartideas.com/proyectos/botones_neon/index.html)
 
