@@ -46,3 +46,17 @@ Cada botón tiene un estilo y animación distinta: brillos, bordes dinámicos, o
    ```bash
    git clone https://github.com/jcduro/Botones_neon.git
    cd Botones_neon
+
+
+
+   --- 
+
+## 📄 Licencia
+Libre, usalo como quieras
+<div align="center">
+  Hecho con 💙 y neones
+</div>
+
+---
+
+## ⭐ Si te gustó este proyecto, no olvides dejar una estrella en GitHub!
