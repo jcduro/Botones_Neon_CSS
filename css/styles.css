@@ -249,3 +249,67 @@ header {
 }
 
 
+
+/* 13. Deslizamiento diagonal (Slice) */
+.btn13 {
+  border: 2px solid var(--clr);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn13::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%; width: 100%; height: 100%;
+  background: var(--neon-yellow);
+  transform: skewX(-45deg);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.btn13:hover::after {
+  left: 0;
+  transform: skewX(0deg);
+}
+
+.btn13:hover {
+  color: var(--black-black);
+  box-shadow: 0 0 20px var(--clr);
+}
+
+/* 14. Barrido Cyberpunk (Scanline) */
+.btn14 {
+  border: 2px solid var(--clr);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn14::before {
+  content: '';
+  position: absolute;
+  top: -10%; left: 0; width: 100%; height: 2px;
+  background: var(--white-white);
+  box-shadow: 0 0 10px var(--white-white), 0 0 20px var(--clr);
+  z-index: 2;
+  opacity: 0;
+}
+
+.btn14:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--white-white);
+  box-shadow: 0 0 15px var(--clr), inset 0 0 15px var(--clr);
+}
+
+.btn14:hover::before {
+  opacity: 1;
+  animation: scanline 1.5s linear infinite;
+}
+
+@keyframes scanline {
+  0% { top: -10%; }
+  100% { top: 110%; }
+}
+
+
